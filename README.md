@@ -6,14 +6,14 @@ Om een AtlaNode te kunnen installeren zijn er 2 hardware benodigdheden:
 - Een Linux capable computer met minimaal 1 vrije USB poort. (Bijvoorbeeld een Raspberry Pi)
 - Een USB SDR ontvanger.
 
-De SDR ([Software Defined Radio](https://nl.wikipedia.org/wiki/Software-defined_radio)) ontvanger is het hart van dit project.
-Deze kunnen we instellen om radioberichten van P2000 te onderscheppen.
-Zo'n ontvanger (DVB-T RTL2832U + R820T2) is vrij goedkoop (+- 10 euro) te vinden op AliExpress.
-Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033.html).
+De SDR ([Software Defined Radio](https://nl.wikipedia.org/wiki/Software-defined_radio)) ontvanger is het hart van dit project.\
+Deze kunnen we instellen om radioberichten van P2000 te onderscheppen.\
+Zo'n ontvanger (DVB-T RTL2832U + R820T2) is vrij goedkoop (+- 10 euro) te vinden op AliExpress.\
+Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033.html).\
 
-Wees ook vooral creatief met je ontvanger :D
-Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:
-![AtlaNode Flash](https://atlanet.jkctech.nl/images/examples/atlanode_flash.gif "AtlaNode Flash")
+Wees ook vooral creatief met je ontvanger :D\
+Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
+![AtlaNode](https://atlanet.jkctech.nl/images/examples/atlanode_on.jpg "AtlaNode")
 
 ## Installatie
 Voor het runnen van de AtlaNET node zijn een paar programma's benodigd.
@@ -116,15 +116,15 @@ pip install -r requirements.txt
 ```
 
 ## Configureren
-In principe is de software nu ready to go. We moeten alleen de instellingen nog even veranderen.
-Copy config/config_default.json naar config/config.json.
-Vul in de nieuwe config.json file de gegeven API key in.
+In principe is de software nu ready to go. We moeten alleen de instellingen nog even veranderen.\
+Copy config/config_default.json naar config/config.json.\
+Vul in de nieuwe config.json file de gegeven API key in.\
 
 ## Uitvoeren
-Nu kan AtlaNode uitgevoerd worden.
-Hoewel dit op de standaard manier niet zo'n goed idee is.
-Wanneer de terminal wordt afgesloten, zal ook de software worden gesloten.
-Dit kunnen we oplossen door de software binnen een screen te runnen.
+Nu kan AtlaNode uitgevoerd worden.\
+Hoewel dit op de standaard manier niet zo'n goed idee is.\
+Wanneer de terminal wordt afgesloten, zal ook de software worden gesloten.\
+Dit kunnen we oplossen door de software binnen een screen te runnen.\
 
 Start een screen (Ik geef deze meestal de naam "monitor")
 ```
@@ -136,9 +136,9 @@ Wanneer we ons binnen de screen bevinden, kunnen we op de normale manier de moni
 python monitor.pyc
 ```
 
-Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).
-Ctrl + a zal ons in de "command mode" zetten.
-Ctrl + d is de command voor "detach".
+Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).\
+Ctrl + a zal ons in de "command mode" zetten.\
+Ctrl + d is de command voor "detach".\
 
 Om later weer met je screen te kunnen connecten kun je reattach uitvoeren:
 ```
