@@ -138,7 +138,7 @@ python monitor.pyc
 
 Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).\
 Ctrl + a zal ons in de "command mode" zetten.\
-Ctrl + d is de command voor "detach".\
+Ctrl + d is de command voor "detach".
 
 Om later weer met je screen te kunnen connecten kun je reattach uitvoeren:
 ```
