@@ -9,7 +9,7 @@ Om een AtlaNode te kunnen installeren zijn er 2 hardware benodigdheden:
 De SDR ([Software Defined Radio](https://nl.wikipedia.org/wiki/Software-defined_radio)) ontvanger is het hart van dit project.\
 Deze kunnen we instellen om radioberichten van P2000 te onderscheppen.\
 Zo'n ontvanger (DVB-T RTL2832U + R820T2) is vrij goedkoop (+- 10 euro) te vinden op AliExpress.\
-Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033.html).\
+Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033.html).
 
 Wees ook vooral creatief met je ontvanger :D\
 Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
@@ -118,13 +118,13 @@ pip install -r requirements.txt
 ## Configureren
 In principe is de software nu ready to go. We moeten alleen de instellingen nog even veranderen.\
 Copy config/config_default.json naar config/config.json.\
-Vul in de nieuwe config.json file de gegeven API key in.\
+Vul in de nieuwe config.json file de gegeven API key in.
 
 ## Uitvoeren
 Nu kan AtlaNode uitgevoerd worden.\
 Hoewel dit op de standaard manier niet zo'n goed idee is.\
 Wanneer de terminal wordt afgesloten, zal ook de software worden gesloten.\
-Dit kunnen we oplossen door de software binnen een screen te runnen.\
+Dit kunnen we oplossen door de software binnen een screen te runnen.
 
 Start een screen (Ik geef deze meestal de naam "monitor")
 ```
