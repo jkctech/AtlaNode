@@ -13,7 +13,7 @@ Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033
 
 Wees ook vooral creatief met je ontvanger :D\
 Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
-![AtlaNode](https://atlanet.jkctech.nl/images/examples/atlanode_on.jpg "AtlaNode")
+![AtlaNode](https://112centraal.nl/images/examples/atlanode_on.jpg "AtlaNode")
 
 ## Installatie
 Voor het runnen van de AtlaNET node zijn een paar programma's benodigd.
@@ -146,4 +146,4 @@ screen -r
 ```
 
 ## Tracking
-Nu kan er op de global map gezien worden dat je node is opgestart: [Node map](https://atlanet.jkctech.nl/monitor/radiolocaties/)
+Nu kan er op de global map gezien worden dat je node is opgestart: [Node map](https://112centraal.nl/radiolocaties/)

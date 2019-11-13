@@ -15,7 +15,7 @@
 		"loopdelay": 0.000001
 	},
 	"api":{
-		"endpoint": "https://atlanet.jkctech.nl/api/",
+		"endpoint": "https://api.112centraal.nl/",
 		"key": ""
 	}
 }
