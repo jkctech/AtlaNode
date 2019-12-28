@@ -13,7 +13,7 @@ Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033
 
 Wees ook vooral creatief met je ontvanger :D\
 Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
-![AtlaNode](https://112centraal.nl/images/examples/atlanode_car.jpg "AtlaNode")
+![AtlaNode](https://112centraal.nl/images/examples/atlanode_on.jpg "AtlaNode")
 
 ## Installatie
 Voor het runnen van de AtlaNET node zijn een paar programma's benodigd.
