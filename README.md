@@ -13,7 +13,7 @@ Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033
 
 Wees ook vooral creatief met je ontvanger :D\
 Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
-![AtlaNode](https://112centraal.nl/images/examples/atlanode_on.jpg "AtlaNode")
+![AtlaNode](https://112centraal.nl/images/examples/atlanode_car.jpg "AtlaNode")
 
 ## Installatie
 Voor het runnen van de AtlaNET node zijn een paar programma's benodigd.
@@ -133,7 +133,7 @@ screen -S monitor
 
 Wanneer we ons binnen de screen bevinden, kunnen we op de normale manier de monitor starten.
 ```
-python monitor.pyc
+./run.sh
 ```
 
 Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).\
