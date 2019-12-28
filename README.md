@@ -133,6 +133,7 @@ screen -S monitor
 
 Wanneer we ons binnen de screen bevinden, kunnen we op de normale manier de monitor starten.
 ```
+chmod +x run.sh
 ./run.sh
 ```
 

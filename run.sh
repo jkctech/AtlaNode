@@ -4,7 +4,7 @@ do
 	echo "Controleren op updates..."
 	git pull
 	echo "Opstarten..."
-	python monitor.py*
+	python monitor.pyc
 	echo "Node afgesloten. Druk op CTRL+C om af te sluiten.";
 	for i in {5..1}
 	do
