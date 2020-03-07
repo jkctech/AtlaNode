@@ -6,13 +6,11 @@ Om een AtlaNode te kunnen installeren zijn er 2 hardware benodigdheden:
 - Een Linux capable computer met minimaal 1 vrije USB poort. (Bijvoorbeeld een Raspberry Pi)
 - Een USB SDR ontvanger.
 
-De SDR ([Software Defined Radio](https://nl.wikipedia.org/wiki/Software-defined_radio)) ontvanger is het hart van dit project.\
-Deze kunnen we instellen om radioberichten van P2000 te onderscheppen.\
-Zo'n ontvanger (DVB-T RTL2832U + R820T2) is vrij goedkoop (+- 10 euro) te vinden op AliExpress.\
+De SDR ([Software Defined Radio](https://nl.wikipedia.org/wiki/Software-defined_radio)) ontvanger is het hart van dit project.
+Deze kunnen we instellen om radioberichten van P2000 te onderscheppen.
+Zo'n ontvanger (DVB-T RTL2832U + R820T2) is vrij goedkoop (+- 10 euro) te vinden op AliExpress.
 Hier een [linkje naar zo'n ontvanger](https://nl.aliexpress.com/item/32813234033.html).
 
-Wees ook vooral creatief met je ontvanger :D\
-Zo heb ik hem in een speelgoed politiewagen gemonteerd om lekker in het thema te blijven:\
 ![AtlaNode](https://112centraal.nl/images/examples/atlanode_car.jpg "AtlaNode")
 
 ## Installatie
@@ -56,7 +54,7 @@ Daarom gaan we deze drivers aan de RPI driver blacklist toevoegen:
 sudo nano /etc/modprobe.d/raspi-blacklist.conf
 ```
 
-Run je geen Raspberry Pi? No problemo, edit dan deze file:
+Run je geen Raspberry Pi? Edit dan deze file:
 ```
 sudo nano /etc/modprobe.d/blacklist.conf
 ```
@@ -82,8 +80,6 @@ We verwachten deze output:
 ```
 Found 1 device(s):
 ```
-Krijg je een error om permissions?
-Probeer dan de radio te runnen als root user.
 
 Ook hebben we multimon nodig voor het decoden van de messages.
 ```
@@ -101,7 +97,7 @@ Je kunt de SDR ontvanger nu ook testen om te kijken of meldingen correct ontvang
 ```
 rtl_fm -f 169.65M -M fm -s 22050 | multimon-ng -q -a FLEX -t raw /dev/stdin
 ```
-Als het goed is zullen er na een paar seconden / minuten (afhankelijk van de tijd van de dag) vanzelf meldingen in beeld komen
+Als het goed is zullen er na een paar seconden / minuten vanzelf meldingen in beeld komen.
 
 Werkt de ontvanger? Top! Tijd om de AtlaNode repo te clonen:
 ```
@@ -116,17 +112,28 @@ pip install -r requirements.txt
 ```
 
 ## Configureren
-In principe is de software nu ready to go. We moeten alleen de instellingen nog even veranderen.\
-Copy config/config_default.json naar config/config.json.\
+In principe is de software nu ready to go. We moeten alleen de instellingen nog even veranderen.
+
+Copy config/config_default.json naar config/config.json.
+```
+cp config/config_default.json config/config.json
+```
 Vul in de nieuwe config.json file de gegeven API key in.
 
-## Uitvoeren
-Nu kan AtlaNode uitgevoerd worden.\
-Hoewel dit op de standaard manier niet zo'n goed idee is.\
-Wanneer de terminal wordt afgesloten, zal ook de software worden gesloten.\
-Dit kunnen we oplossen door de software binnen een screen te runnen.
 
-Start een screen (Ik geef deze meestal de naam "monitor")
+Mocht je meerdere SDR ontvangers op 1 node hebben draaien, kun je in de config file onder "command" je device index aangeven:
+
+"command": "rtl_fm -f 169.65M -M fm -s 22050 **-d X** | multimon-ng -q -a FLEX -t raw /dev/stdin"
+
+Hierbij staat X voor je device index.
+
+Zorg dat het run script uitvoerbaar is.
+```
+chmod +x run.sh
+```
+
+## Uitvoeren
+Start een screen
 ```
 screen -S monitor
 ```
@@ -137,11 +144,11 @@ chmod +x run.sh
 ./run.sh
 ```
 
-Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).\
-Ctrl + a zal ons in de "command mode" zetten.\
+Om de screen te verlaten drukken we op (CTRL + a) (CTRL + d).
+Ctrl + a zal ons in de "command mode" zetten.
 Ctrl + d is de command voor "detach".
 
-Om later weer met je screen te kunnen connecten kun je reattach uitvoeren:
+Om later weer met je screen te kunnen connecten kun je reattach uitvoeren in je terminal:
 ```
 screen -r
 ```
